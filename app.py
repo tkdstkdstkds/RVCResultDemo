@@ -13,7 +13,7 @@ def main():
             # create a gradio markdown
             gradio.Markdown("> 音声合成（「声質の学習」「RVCによる声質変換」など、より具体的に説明しても可）には、フリー素材キャラクター「つくよみちゃん」が無料公開している音声データを使用しています。<br>"\
                             "■つくよみちゃんコーパス（CV.夢前黎）<br>" \
-                            "https://tyc.rei-yumesaki.net/material/corpus/<br>")
+                            "https://tyc.rei-yumesaki.net/material/corpus/")
             # create a gradio audio player, audio file path = ./vocal/rei-yumesaki/VOICEACTRESS100_001.wav
             gradio.Audio(value="./vocal/rei-yumesaki/VOICEACTRESS100_001.wav", label="rei-yumesaki訓練集原始音檔試聽", shared=False)
 
@@ -24,8 +24,10 @@ def main():
             gradio.Markdown("## case1: 測試女性聲音轉rei-yumesaki的聲音")
 
             # create a gradio label
-            gradio.Markdown("jsut來源音檔URL: [https://sites.google.com/site/shinnosuketakamichi/publication/jsut](https://sites.google.com/site/shinnosuketakamichi/publication/jsut)")
-            gradio.Markdown("> 論文 Ryosuke Sonobe, Shinnosuke Takamichi and Hiroshi Saruwatari,  'JSUT corpus: free large-scale Japanese speech corpus for end-to-end speech synthesis,' arXiv preprint, 1711.00354, 2017.")
+            
+            gradio.Markdown("> jsut來源音檔URL: [https://sites.google.com/site/shinnosuketakamichi/publication/jsut](https://sites.google.com/site/shinnosuketakamichi/publication/jsut)<br>" \
+                            "Ryosuke Sonobe, Shinnosuke Takamichi and Hiroshi Saruwatari <br> "\
+                            "'JSUT corpus: free large-scale Japanese speech corpus for end-to-end speech synthesis,' arXiv preprint, 1711.00354, 2017.")
             # create a gradio audio player, audio file path = ./vocal/jsut_ver1.1/REPEAT500_set1_001.wav
             gradio.Audio(value="./vocal/jsut_ver1.1/REPEAT500_set1_001.wav", label="jsut來源音檔試聽", shared=False)
 
