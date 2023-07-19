@@ -1,4 +1,5 @@
-name: RVCResultTest
+#conda env create -f environment.yml --prefix .conda
+name: RVCResultDemo
 
 channels:
   - conda-forge
