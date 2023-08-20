@@ -6,4 +6,4 @@ channels:
 
 dependencies:
   - python=3.10
-  - gradio
+  - gradio=3.23.0
